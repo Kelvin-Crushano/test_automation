@@ -1,0 +1,65 @@
+package testBase;
+
+import java.time.Duration;
+
+
+import org.apache.commons.text.CharacterPredicates;
+import org.apache.commons.text.RandomStringGenerator;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+
+public class BaseClass {
+	
+	protected WebDriver driver;
+	public Logger logger;
+	
+	@BeforeClass
+	public void setup() {
+		
+		 logger=LogManager.getLogger(this.getClass());
+		
+		driver=new ChromeDriver();
+		driver.manage().deleteAllCookies();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.get("http://localhost/opencart/");
+		driver.manage().window().maximize();
+	}
+	
+	@AfterClass
+	public void teardown() {
+		 driver.close();
+	}
+	
+
+	public String randomString() {
+		RandomStringGenerator generator = new RandomStringGenerator.Builder()
+				.withinRange('0', 'z')              // upper n lower case letters
+			    .filteredBy(CharacterPredicates.LETTERS)
+			    .build();
+        return generator.generate(5);
+	}
+	
+	
+	public String randomNumber() {
+		RandomStringGenerator generator = new RandomStringGenerator.Builder()
+				 .withinRange('0', '9')           // digits only
+                 .build();
+        return generator.generate(8);
+	}
+	
+    /*
+     * generate Alphanumeric values    
+	.withinRange('0', 'z')
+    .filteredBy(Character::isLetterOrDigit)
+    .build();   */
+	
+	
+	
+}

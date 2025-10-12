@@ -1,0 +1,36 @@
+package day43.pack2;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
+public class HardvsSoftAssertions {
+	
+	
+//	@Test
+	void test_hardassertion() {
+		System.out.println("testing 1...");
+		System.out.println("testing 2...");
+		
+		Assert.assertEquals(2, 2);  // if this statement fail the statements in succession will not be executed
+		
+		System.out.println("testing 3...");
+		System.out.println("testing 4...");
+
+	}
+	
+	
+	void test_softassertion() {
+		System.out.println("testing 1...");
+		System.out.println("testing 2...");
+		
+		SoftAssert sa = new SoftAssert();
+		d
+		sa.assertEquals(2, 5);// if this statement fail the statements in succession will still be executed
+		
+		System.out.println("testing 3...");
+		System.out.println("testing 4...");
+
+	}
+
+}

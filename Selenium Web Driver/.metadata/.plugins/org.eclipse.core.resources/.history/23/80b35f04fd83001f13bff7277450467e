@@ -1,0 +1,57 @@
+package day24;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Xpathdemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		WebDriver driver = new ChromeDriver();  // import packages using ctrl+shift+ alphabet (o)
+		driver.get("http://www.samuelgnanam.com/register");
+		driver.manage().window().maximize();
+		
+		// x path with single attribute
+//	driver.findElement(By.xpath("//textarea[@id='profqualification']")).sendKeys("LRA");
+				
+		// x path with multiple attribute 
+	
+//	driver.findElement(By.xpath("//textarea[@id='workexperience'][@name='workexperience']")).sendKeys("Workexperience");
+		
+		// x path with AND operator
+	
+//	driver.findElement(By.xpath("//textarea[@id='workexperience' and @name='workexperience']")).sendKeys("kelvin");	
+	 
+	    // x path with OR operator
+//  driver.findElement(By.xpath("//textarea[@id='workexperience' or @name='workexper']")).sendKeys(" OR attribute");	
+                              //textarea[@id='workexperience' or @name='workexperience']
+	
+	
+		// x path with text() - inner text
+		
+		//  driver.findElement(By.xpath("//*[text()='ABOUT US ']")).click();
+       
+ //    boolean displaystatus = driver.findElement(By.xpath("//h1[text()=' TIRSE Application Form']")).isDisplayed();
+  //                System.out.println(displaystatus);
+          
+//    String text = driver.findElement(By.xpath("//h1[text()=' TIRSE Application Form']")).getText();
+//	         System.out.println("text is "+ text);
+	  
+	        
+		  // x path with contains()    = specify the Attribute and Value (partial or complete)
+		
+//     driver.findElement(By.xpath("//input[contains(@name,'parent')]")).sendKeys("0771445833");	
+		
+         // x path starts-with()  
+     
+     driver.findElement(By.xpath("//input[starts-with(@name,'parent')]")).sendKeys("000"); 
+	                  
+     
+		
+	        
+	}
+
+}
