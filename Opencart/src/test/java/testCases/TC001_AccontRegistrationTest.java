@@ -14,12 +14,12 @@ public class TC001_AccontRegistrationTest extends BaseClass {
 	@Test
 	public void verify_account_registration() throws InterruptedException  {
 		
-		 logger.info("*** Starting TC001_AccontRegistrationTest ***");
+		 logger.info("*** Starting TC001_AccountRegistrationTest ***");
 		try {
 		 HomePage hp = new HomePage(driver);
 		
 		 hp.clk_account();
-		 logger.info("*** Starting clicked on account ***"); 
+		 logger.info("*** clicked on account ***"); 
 		 
 		 hp.clk_register();
 		 logger.info("*** clicked on register ***");
@@ -40,14 +40,23 @@ public class TC001_AccontRegistrationTest extends BaseClass {
 		 logger.info("*** Validating message ****");
 		 	 
 		 String cnfrm_msg = rp.confirm_message();
-		 Assert.assertEquals(cnfrm_msg, "Your Account Has Been Createddddd!");
-		} 
-		catch(Exception e) {
+		 
+		 if (cnfrm_msg.equals("Your Account Has Been Created!")){
+			 Assert.assertTrue(true);
+		 }
+		 else {
 			logger.error("test failed");
 			logger.debug("debug logs");
+			Assert.assertTrue(false);
+		 }
+		 
+		} 
+		catch(Exception e) {
+			
 			Assert.fail();
 		}
-		 
+		
+		 logger.info("*** Finishing TC001_AccountRegistrationTest **** ");
 	}
 	
 	/*

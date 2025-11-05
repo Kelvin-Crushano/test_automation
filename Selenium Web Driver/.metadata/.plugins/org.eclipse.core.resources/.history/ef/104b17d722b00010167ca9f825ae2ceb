@@ -1,0 +1,20 @@
+20:57:46.171 [main] DEBUG org.testng.TestNG - suiteXmlPath: "E:\QA  Automation\Opencart\master.xml"
+20:57:46.370 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  E:\QA  Automation\Opencart\master.xml
+
+20:57:48.667 [main] INFO  testCases.TC001_AccontRegistrationTest - *** Starting TC001_AccontRegistrationTest ***
+20:57:48.792 [main] INFO  testCases.TC001_AccontRegistrationTest - *** clicked on account ***
+20:57:49.260 [main] INFO  testCases.TC001_AccontRegistrationTest - *** clicked on register ***
+20:57:49.264 [main] INFO  testCases.TC001_AccontRegistrationTest - *** Enter customer details ***
+20:57:52.734 [main] INFO  testCases.TC001_AccontRegistrationTest - *** Validating message ****
+20:57:52.772 [main] INFO  testCases.TC001_AccontRegistrationTest - *** TC001_AccontRegistrationTest **** 
+20:42:41.127 [main] DEBUG org.testng.TestNG - suiteXmlPath: "E:\QA  Automation\Opencart\master.xml"
+20:42:41.337 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  E:\QA  Automation\Opencart\master.xml
+
+20:42:56.007 [main] INFO  testCases.TC001_AccontRegistrationTest - *** Starting TC001_AccontRegistrationTest ***
+20:42:56.162 [main] INFO  testCases.TC001_AccontRegistrationTest - *** clicked on account ***
+20:42:56.650 [main] INFO  testCases.TC001_AccontRegistrationTest - *** clicked on register ***
+20:42:56.650 [main] INFO  testCases.TC001_AccontRegistrationTest - *** Enter customer details ***
+20:43:00.030 [main] INFO  testCases.TC001_AccontRegistrationTest - *** Validating message ****
+20:43:00.077 [main] INFO  testCases.TC001_AccontRegistrationTest - *** Finishing TC001_AccontRegistrationTest **** 
