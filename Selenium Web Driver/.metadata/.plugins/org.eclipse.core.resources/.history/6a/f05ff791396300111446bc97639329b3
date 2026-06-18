@@ -1,0 +1,34 @@
+package testCases;
+
+import pageObjects.HomePage;
+import pageObjects.LoginPage;
+import testBase.BaseClass;
+
+public class TC002_LoginTest extends BaseClass{
+	
+	public void verify_Login () {
+		
+		logger.info("----starting TC002 LoginTest----");
+		
+		
+		HomePage HP = new HomePage(driver);
+		HP.clk_account();
+		HP.clk_login();
+		
+		LoginPage LP = new LoginPage(driver);
+		LP.set_email(p.getProperty("email"));
+		LP.set_pword(p.getProperty("password"));
+		LP.clk_login();
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+
+}

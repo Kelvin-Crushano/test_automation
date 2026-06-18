@@ -1,0 +1,44 @@
+package pageObjects;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class LoginPage extends BasePage {
+
+	public LoginPage(WebDriver driver) {
+		super(driver);
+		// TODO Auto-generated constructor stub
+	}
+	
+	//locators
+	@FindBy(xpath="//input[@id='input-email']") WebElement Email;
+	@FindBy(xpath="//input[@id='input-password']") WebElement Pword;
+	@FindBy(xpath="//button[normalize-space()='Login']") WebElement btn_login;
+	@FindBy(xpath="//a[@aria-expanded='false']//i[@class='fa-solid fa-caret-down']") WebElement drp_down_myaccount; 
+	@FindBy(xpath="//a[@class='dropdown-item'][normalize-space()='Logout'") WebElement btn_logout;
+	
+	//Action Method
+	public void set_email(String email) {
+		Email.sendKeys(email);
+	}
+	
+	public void set_pword (String password) {
+		Pword.sendKeys(password);
+	}
+	
+	public void clk_login() {
+		btn_login.click();
+	}
+	
+	public void clk_myaccount() {
+		drp_down_myaccount.click();
+	}
+	
+	public void clk_logout() {
+		btn_logout.click();
+	}
+	
+	
+
+}

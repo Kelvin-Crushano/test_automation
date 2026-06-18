@@ -1,0 +1,70 @@
+package pageObjects;
+
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+
+public class MyAccount extends BasePage{
+	
+	// Constructor
+	public MyAccount(WebDriver driver){
+		   super(driver);
+	}
+	
+	  // Locator
+	@FindBy(xpath="//h1[normalize-space()='My Account']") WebElement msgHeading;
+	
+	@FindBy(xpath="//a[@aria-expanded='false']//i[@class='fa-solid fa-caret-down']") WebElement drp_down_myaccount; 
+//	@FindBy(xpath="//ul[@class='dropdown-menu dropdown-menu-right show']/descendant::a[5]") WebElement btn_logout;
+	@FindBy(xpath="//div[@class='list-group mb-3']/child::a[14]") WebElement btn_logout;
+	//a[@class='dropdown-item'][normalize-space()='Logout']
+	//ul[@class='dropdown-menu dropdown-menu-right show']//a[2]
+	////a[@class='dropdown-item']/li/a[text()='Logout'] 
+	
+	
+	// Action Method
+	public boolean isMyAccountPageExist() {
+		try 
+		{
+		  return (msgHeading.isDisplayed());
+		}
+		catch (Exception e) 
+		{
+			return false;
+		}
+		
+		}
+	
+	/*
+	public void clk_myaccount() {
+		drp_down_myaccount.click();
+	}  */
+	
+	
+	public void clk_logout() throws InterruptedException {
+		/*
+		Actions act = new Actions(driver);
+		act.click(drp_down_myaccount).perform();
+		
+        
+		act.keyDown(Keys.TAB).keyUp(Keys.TAB).perform();
+		act.keyDown(Keys.TAB).keyUp(Keys.TAB).perform();
+		act.keyDown(Keys.TAB).keyUp(Keys.TAB).perform();
+		act.keyDown(Keys.TAB).keyUp(Keys.TAB).perform();
+		act.keyDown(Keys.TAB).keyUp(Keys.TAB).perform();
+		act.keyDown(Keys.ENTER).keyUp(Keys.ENTER).perform();
+		 	*/
+		
+		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+//		js.executeScript("arguments[0],click()", btn_logout.click());
+		js.executeScript("arguments[0].scrollIntoView();",btn_logout);
+		
+		Thread.sleep(5000);
+
+		btn_logout.click();
+	}
+}

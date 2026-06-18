@@ -16,6 +16,7 @@ public class HomePage extends BasePage  {
 	// locator
 	@FindBy(xpath="//span[normalize-space()='My Account']") WebElement lnkMyAccount;
 	@FindBy(xpath="//a[normalize-space()='Register']") WebElement lnkRegister;
+	@FindBy(xpath="//a[normalize-space()='Login']") WebElement lnkLogin;
 	
 	// Action Methods
 	
@@ -25,6 +26,10 @@ public class HomePage extends BasePage  {
 	
 	public void clk_register() {
 		lnkRegister.click();
+	}
+	
+	public void clk_login() {
+		lnkLogin.click();
 	}
 	
 	

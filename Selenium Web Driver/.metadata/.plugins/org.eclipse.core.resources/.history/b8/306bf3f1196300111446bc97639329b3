@@ -1,0 +1,16 @@
+package pageObjects;
+
+import org.openqa.selenium.WebDriver;
+
+public class LoginPage extends BasePage {
+
+	LoginPage(WebDriver driver) {
+		super(driver);
+		// TODO Auto-generated constructor stub
+	}
+	
+	@FindBy(Xpath"//input[@id='input-email']") WebElement Email;
+	
+	
+
+}

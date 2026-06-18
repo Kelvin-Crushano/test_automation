@@ -1,0 +1,152 @@
+package utilities;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+import org.apache.poi.ss.usermodel.CellStyle;
+import org.apache.poi.ss.usermodel.DataFormatter;
+import org.apache.poi.ss.usermodel.FillPatternType;
+import org.apache.poi.ss.usermodel.IndexedColors;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class ExcelUtility {
+	
+		public static FileInputStream fi;
+		public static FileOutputStream fo;
+		public static XSSFWorkbook wb;
+		public static XSSFSheet ws;
+		public static XSSFRow row;
+		public static XSSFCell cell;
+		public static CellStyle style;
+				
+		
+		public static int get_row_count(String rq_xlfile, String rq_xlsheet) throws IOException {
+			
+			fi = new FileInputStream(rq_xlfile);
+			wb = new XSSFWorkbook(fi);
+			ws = wb.getSheet(rq_xlsheet);
+			int rowcount = ws.getLastRowNum();  // last row number exactly be the total row number
+			
+			wb.close();
+			fi.close();
+			return rowcount;
+			
+		}
+		
+		 public static int get_cell_count (String rq_xlfile, String rq_sheet_name, int rq_row_number) throws IOException {
+			 
+			 fi = new FileInputStream(rq_xlfile);
+			 wb = new XSSFWorkbook(fi);
+			 ws = wb.getSheet(rq_sheet_name);
+			 row = ws.getRow(rq_row_number);       
+			 int cellcount = row.getLastCellNum();
+			 
+			 wb.close();
+			 fi.close();
+			 return cellcount;
+		
+		 }
+		 
+		 
+		 public static String getCelldata(String rq_xlfile, String rq_xlsheet,int rq_row_number, int rq_cell_number ) throws IOException {
+			 
+			 fi = new FileInputStream(rq_xlfile);
+			 wb = new XSSFWorkbook(fi);
+			 ws = wb.getSheet(rq_xlsheet);
+			 
+			 row = ws.getRow(rq_row_number);
+			 cell = row.getCell(rq_cell_number);
+			 
+			 String data;
+			 try {
+//			 data = cell.toString();
+			 DataFormatter df = new DataFormatter();
+			 data = df.formatCellValue(cell);
+			 }
+			 catch (Exception e) {
+			
+				 data="";   //cells with empty value
+			 }
+			 
+			 wb.close();
+			 fi.close();
+			 return data;
+			 
+			}
+		  
+		 
+		 public static void writedata (String rq_xlfile, String rq_xlsheet, int rq_row_num, int cell_num, String value) throws IOException {
+			 
+			 fi = new FileInputStream(rq_xlfile);
+			 wb = new XSSFWorkbook(fi);
+			 ws = wb.getSheet(rq_xlsheet);
+			 row =  ws.getRow(rq_row_num);
+			 
+//			 cell = row.getCell(cell_num);
+			 cell = row.createCell(cell_num);
+			 	 
+			fo = new FileOutputStream(rq_xlfile);
+			cell.setCellValue(value); 	
+			
+			
+			 wb.write(fo);
+			 wb.close();
+			 fo.close();
+			 fi.close();
+		 	 
+		 }
+		 
+		 
+		 public static void fillGreenColor (String rq_xlfile, String rq_xlsheet, int rq_row_num, int rq_cell_num ) throws IOException {
+			 
+			 	fi = new FileInputStream(rq_xlfile);
+				wb = new XSSFWorkbook(fi);
+				ws = wb.getSheet(rq_xlsheet);
+				
+				row = ws.getRow(rq_row_num);
+				cell= row.getCell(rq_cell_num);
+				
+				style = wb.createCellStyle();
+				style.setFillForegroundColor(IndexedColors.GREEN.getIndex());
+				style.setFillPattern(FillPatternType.SOLID_FOREGROUND);
+				
+				cell.setCellStyle(style);
+				fo=new FileOutputStream(rq_xlfile);
+				wb.write(fo);
+				wb.close();
+				fi.close();
+				fo.close();
+		 	}
+		
+		 
+		 public static void fillRedColor (String rq_xlfile, String rq_xlsheet, int rq_row_num, int rq_cell_num ) throws IOException {
+			 
+			 	fi = new FileInputStream(rq_xlfile);
+				wb = new XSSFWorkbook(fi);
+				ws = wb.getSheet(rq_xlsheet);
+				
+				row = ws.getRow(rq_row_num);
+				cell= row.getCell(rq_cell_num);
+				
+				style = wb.createCellStyle();
+				style.setFillForegroundColor(IndexedColors.RED.getIndex());
+				style.setFillPattern(FillPatternType.SOLID_FOREGROUND);
+				
+				cell.setCellStyle(style);
+				fo=new FileOutputStream(rq_xlfile);
+				wb.write(fo);
+				wb.close();
+				fi.close();
+				fo.close();
+		 	}
+		
+		 
+
+	}
+
+	
+

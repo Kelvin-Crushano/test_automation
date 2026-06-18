@@ -7,7 +7,7 @@ import java.util.Properties;
 
 import org.apache.commons.text.CharacterPredicates;
 import org.apache.commons.text.RandomStringGenerator;
-
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;

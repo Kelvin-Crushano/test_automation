@@ -1,0 +1,71 @@
+package testCases;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import pageObjects.HomePage;
+import pageObjects.LoginPage;
+import pageObjects.MyAccount;
+import testBase.BaseClass;
+import utilities.DataProviders;
+
+
+public class TC003_LoginDDT extends BaseClass  {
+	
+	
+	@Test(dataProvider="LoginData", dataProviderClass=DataProviders.class) // "dataProviderClass" parameter is required only if the "dataprovider.java" file is present in some other package(eg: utilities) 
+	public void verify_login() {
+		
+		HomePage HP = new HomePage(driver);
+		HP.clk_account();
+		HP.clk_login();
+		
+		LoginPage LP = new LoginPage(driver);
+		LP.set_email("User Name");
+		LP.set_pword("Password");
+		LP.clk_login();
+		
+		MyAccount MA = new MyAccount(driver);
+		Boolean account_page = MA.isMyAccountPageExist();
+		
+		/*    
+		 * Data is correct - login success - test success
+		 * Data is correct - login unsuccessful - test fail
+		 * 
+		 * Data is incorrect - login success - test fail
+		 * Data is incorrect - login unsuccessful - test pass
+		 * */
+		
+		if (Expected.) {
+			
+			if(account_page==true) {
+				
+				MA.clk_myaccount();
+				MA.clk_logout();
+				Assert.assertTrue(true);
+			}
+			else {
+				Assert.assertTrue(false);
+			}
+						
+		}
+		
+		if(Expected.) {
+			
+		if(account_page==true) {
+			
+			MA.clk_myaccount();
+			MA.clk_logout();
+			Assert.assertTrue(false);
+		}
+		else {
+			Assert.assertTrue(true);
+		}
+	}
+		  
+		
+	}
+	
+	
+
+}

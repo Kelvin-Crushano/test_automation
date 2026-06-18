@@ -1,10 +1,82 @@
-20:52:36.717 [main] DEBUG org.testng.TestNG - suiteXmlPath: "E:\QA  Automation\Opencart\master.xml"
-20:52:36.921 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+22:55:08.364 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
   E:\QA  Automation\Opencart\master.xml
 
-20:52:50.046 [main] INFO  testCases.TC001_AccontRegistrationTest - *** Starting TC001_AccountRegistrationTest ***
-20:52:50.270 [main] INFO  testCases.TC001_AccontRegistrationTest - *** clicked on account ***
-20:52:50.906 [main] INFO  testCases.TC001_AccontRegistrationTest - *** clicked on register ***
-20:52:50.909 [main] INFO  testCases.TC001_AccontRegistrationTest - *** Enter customer details ***
-20:52:54.562 [main] INFO  testCases.TC001_AccontRegistrationTest - *** Validating message ****
-20:52:54.592 [main] INFO  testCases.TC001_AccontRegistrationTest - *** Finishing TC001_AccountRegistrationTest **** 
+22:55:11.970 [main] INFO  testCases.TC003_LoginDDT - ----Starting TC003_LoginDDT-------
+22:55:14.375 [main] INFO  testCases.TC003_LoginDDT - ----Starting TC003_LoginDDT-------
+22:55:24.452 [main] INFO  testCases.TC003_LoginDDT - ----Starting TC003_LoginDDT-------
+22:55:34.569 [main] INFO  testCases.TC003_LoginDDT - ----Starting TC003_LoginDDT-------
+22:55:44.657 [main] INFO  testCases.TC003_LoginDDT - ----Starting TC003_LoginDDT-------
+23:20:53.486 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  E:\QA  Automation\Opencart\master.xml
+
+23:20:57.828 [main] INFO  testCases.TC003_LoginDDT - ----Starting TC003_LoginDDT-------
+23:21:00.169 [main] INFO  testCases.TC003_LoginDDT - ----Starting TC003_LoginDDT-------
+23:21:10.307 [main] INFO  testCases.TC003_LoginDDT - ----Starting TC003_LoginDDT-------
+23:21:20.409 [main] INFO  testCases.TC003_LoginDDT - ----Starting TC003_LoginDDT-------
+23:21:30.489 [main] INFO  testCases.TC003_LoginDDT - ----Starting TC003_LoginDDT-------
+23:31:17.670 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  E:\QA  Automation\Opencart\master.xml
+
+23:31:21.547 [main] INFO  testCases.TC003_LoginDDT - ----Starting TC003_LoginDDT-------
+23:31:28.220 [main] INFO  testCases.TC003_LoginDDT - ****Finished TC_003_LoginDDT****
+23:31:28.230 [main] INFO  testCases.TC003_LoginDDT - ----Starting TC003_LoginDDT-------
+23:31:38.970 [main] INFO  testCases.TC003_LoginDDT - ****Finished TC_003_LoginDDT****
+23:31:38.984 [main] INFO  testCases.TC003_LoginDDT - ----Starting TC003_LoginDDT-------
+23:31:49.587 [main] INFO  testCases.TC003_LoginDDT - ****Finished TC_003_LoginDDT****
+23:31:49.603 [main] INFO  testCases.TC003_LoginDDT - ----Starting TC003_LoginDDT-------
+23:32:00.260 [main] INFO  testCases.TC003_LoginDDT - ****Finished TC_003_LoginDDT****
+23:32:00.270 [main] INFO  testCases.TC003_LoginDDT - ----Starting TC003_LoginDDT-------
+23:32:06.789 [main] INFO  testCases.TC003_LoginDDT - ****Finished TC_003_LoginDDT****
+00:19:30.339 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+00:19:30.343 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+00:19:30.344 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+00:19:30.344 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+00:19:30.345 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+00:19:30.345 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+00:19:30.345 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+00:19:30.346 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+00:19:30.348 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 2 ms.
+00:19:30.358 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 9 ms.
+00:19:30.360 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+00:19:30.360 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+00:19:30.360 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+00:19:30.360 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+00:19:30.360 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+00:19:30.360 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+00:19:30.362 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+00:19:30.362 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+00:19:30.362 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+00:19:30.362 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+00:19:30.363 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+00:19:30.363 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+00:19:30.363 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+00:19:30.363 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+00:19:30.364 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+00:19:30.364 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+00:19:30.365 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+00:19:30.365 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+00:19:30.365 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+00:19:30.365 [main] INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+00:19:30.370 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\kelvi\AppData\Local\Temp\testng-eclipse--1055779819\testng-customsuite.xml
+
+00:19:30.379 [main] INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 1 ms.
+00:19:31.194 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.jq.Main@289778cd: 45 ms
+00:19:31.207 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@21f8e55f: 13 ms
+00:19:31.215 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@37191ef0: 8 ms
+00:19:31.223 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@12b5454f: 8 ms
+00:19:31.228 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.JUnitReportReporter@67110f71: 4 ms
+00:19:31.228 [main] INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@6f89292e: 0 ms
+00:20:19.113 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  E:\QA  Automation\Opencart\master.xml
+
+00:20:26.867 [main] INFO  testCases.TC003_LoginDDT - ----Starting TC003_LoginDDT-------
+00:20:33.882 [main] INFO  testCases.TC003_LoginDDT - ****Finished TC_003_LoginDDT****
+00:20:33.889 [main] INFO  testCases.TC003_LoginDDT - ----Starting TC003_LoginDDT-------
+00:20:44.585 [main] INFO  testCases.TC003_LoginDDT - ****Finished TC_003_LoginDDT****
+00:20:44.593 [main] INFO  testCases.TC003_LoginDDT - ----Starting TC003_LoginDDT-------
+00:20:55.419 [main] INFO  testCases.TC003_LoginDDT - ****Finished TC_003_LoginDDT****
+00:20:55.431 [main] INFO  testCases.TC003_LoginDDT - ----Starting TC003_LoginDDT-------
+00:21:06.001 [main] INFO  testCases.TC003_LoginDDT - ****Finished TC_003_LoginDDT****
+00:21:06.017 [main] INFO  testCases.TC003_LoginDDT - ----Starting TC003_LoginDDT-------
+00:21:12.574 [main] INFO  testCases.TC003_LoginDDT - ****Finished TC_003_LoginDDT****
